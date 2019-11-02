@@ -403,7 +403,7 @@ describe "/insert_character_record" do
 
     d_count = Character.all.count
 
-    visit "/insert_character_record??name=Bo Peep&actor_id=653&movie_id=51"
+    visit "/insert_character_record?name=Bo Peep&actor_id=653&movie_id=51"
 
     d = Character.where({ :name => "Bo Peep"}).first
 
